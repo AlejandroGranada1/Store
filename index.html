@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+    
+    <title>Formularios</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="form-container">
+            <div class="toggle">
+                <button id="login-btn" class="active">Inicio de Sesión</button>
+                <button id="register-btn">Registro</button>
+            </div>
+            <form id="login-form" class="form active" action='registros.html'>
+                <h2>Iniciar Sesión</h2>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <form id="register-form" class="form">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body> 
+</html>
