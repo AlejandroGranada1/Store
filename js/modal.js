@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Abrir modal al hacer clic en el botón
     newUserButton.addEventListener("click", function () {
         modal.style.display = "flex";
+        modal.style.visibility="visible"
     });
 
     // Cerrar modal al hacer clic en la 'X'

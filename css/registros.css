@@ -52,6 +52,7 @@ th {
 
 .modal {
     display: none;
+    visibility: hidden;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -135,7 +136,7 @@ textarea {
 }
 
 form button {
-    background-color: #28a745;
+    background-color: #0056b3;
     color: white;
     font-weight: bold;
     cursor: pointer;
