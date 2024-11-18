@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginBtn = document.getElementById("login-btn");
     const registerBtn = document.getElementById("register-btn");
     const loginForm = document.getElementById("login-form");
-    const registerForm = document.getElementById("register-form");
+    const registerForm = document.getElementById("register-form");  
 
     loginBtn.addEventListener("click", () => {
         loginBtn.classList.add("active");
@@ -18,3 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
         loginForm.classList.remove("active");
     });
 });
+
+const registrar = () => {
+    const user ={
+        nombre: document.getElementById ("nombre").value,
+        correo: document.getElementById ("correo").value,
+        contrasena: document.getElementById ("contrasena").value,           
+    }
+    localStorage.setItem('user', JSON.stringify(user))
+}
