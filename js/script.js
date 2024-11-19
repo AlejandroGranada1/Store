@@ -27,3 +27,4 @@ const registrar = () => {
     }
     localStorage.setItem('user', JSON.stringify(user))
 }
+    

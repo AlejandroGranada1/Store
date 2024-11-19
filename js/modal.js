@@ -20,4 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
             modal.style.display = "none";
         }
     });
+
+    guardar.addEventListener("click", function() {
+        modal.style.display = "none";
+    })
 });
+
+const registromod = () => {
+    const formu = {
+        documento: document.getElementById("doc").value,
+        nombre: document.getElementById("name").value,
+        edad: document.getElementById("age").value,
+        imagen: document.getElementById("photoInput").value,
+        ciudad: document.getElementById("city").value,
+        email: document.getElementById("email").value,
+        telefono: document.getElementById("phone").value,
+        fecha: document.getElementById("startDate").value,
+    }
+    localStorage.setItem(formu.documento, JSON.stringify(formu))
+}
