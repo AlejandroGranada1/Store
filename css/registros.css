@@ -11,19 +11,30 @@ body {
     margin: 0 auto;
 }
 
-.new-user-button {
+.new-user-button,
+.logout-button, .search-button {
+    margin: 10px 5px;
+    padding: 10px 15px;
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.new-user-button:hover {
+.new-user-button:hover,
+.logout-button:hover,
+.search-button:hover {
     background-color: #0056b3;
+}
+
+.logout-button {
+    background-color: #dc3545;
+}
+
+.logout-button:hover {
+    background-color: #b52b38;
 }
 
 table {

@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/registros.css">
-    <script defer src='./js/modal.js'></script>
+    <title>Registros</title>
+    <link rel="stylesheet" href="../css/registros.css">
+    <script defer src='../js/registros.js'></script>
 </head>
 <body>
     <div class="container">
         <button id="newUserButton" class="new-user-button">New User 👤</button>
+        <a href='buscar.html' id='searchButton' class="search-button">Search 🔍</a>
+        <button id="logoutButton" class="logout-button">Salir 🚪</button>
         <table>
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Picture</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>City</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Post</th>
-                    <th>Start Date</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="10" class="empty-row">No data available</td>
-                </tr>
-            </tbody>
-        </table>
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Post</th>
+            <th>Start Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="userTable">
+        
+    </tbody>
+</table>
+
     </div>
 
     <!-- Modal -->
@@ -43,7 +44,6 @@
                 <input type="text" id="name" placeholder="Nombre" required><br>
                 <input type="number" id="age" placeholder="Edad" required><br>
                 <input type="file" id="photoInput" accept="image/*" required><br>
-                <img id="preview" style="display:none; width: 100px; height: 100px; object-fit: cover; margin-top: 10px;" />
                 <input type="text" id="city" placeholder="Ciudad" required><br>
                 <input type="email" id="email" placeholder="Email" required><br>
                 <input type="tel" id="phone" placeholder="Celular" required><br>

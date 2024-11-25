@@ -20,11 +20,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const registrar = () => {
-    const user ={
-        nombre: document.getElementById ("nombre").value,
-        correo: document.getElementById ("correo").value,
-        contrasena: document.getElementById ("contrasena").value,           
+    const user = {
+        Nombre: document.getElementById("nombre").value,
+        correo: document.getElementById("correo").value,
+        contrasena: document.getElementById("contrasena").value,           
+    };
+    // Guardar datos del usuario en localStorage con clave "user"
+    localStorage.setItem('user', JSON.stringify(user));
+    alert("Usuario registrado exitosamente");
+};
+
+const iniciarSesion = () => {
+    const correo = document.getElementById("login-correo").value;
+    const contrasena = document.getElementById("login-contrasena").value;
+
+    // Recuperar datos del usuario almacenado
+    const storedUser = JSON.parse(localStorage.getItem('user'));
+
+    // Verificar si los datos coinciden
+    if (storedUser && storedUser.correo === correo && storedUser.contrasena === contrasena) {
+        alert(`Bienvenido, ${storedUser.Nombre}!`);
+        // Redirigir a la página de registros
+        window.location.href = "registros.html";
+    } else {
+        alert("Correo o contraseña incorrectos.");
     }
-    localStorage.setItem('user', JSON.stringify(user))
-}
-    
+};

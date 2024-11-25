@@ -75,3 +75,17 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background: #0056b3;
 }
+
+.btn-ini {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-ini {
+    background: #0056b3;
+}
